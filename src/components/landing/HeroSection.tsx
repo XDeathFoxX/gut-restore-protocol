@@ -93,7 +93,7 @@ const HeroSection = () => {
           className="flex flex-col items-center gap-3"
         >
           <a href="https://pay.kirvano.com/368b993d-b387-4dc7-af77-a20558053be9" target="_blank" rel="noopener noreferrer" className="btn-cta text-xl animate-pulse-glow rounded-2xl inline-block">
-            QUERO ACESSAR O MÉTODO AGORA
+            QUERO ACESSAR O PROTOCOLO AGORA
           </a>
           <p className="text-sm text-muted-foreground">Assista até o final para entender.</p>
         </motion.div>
