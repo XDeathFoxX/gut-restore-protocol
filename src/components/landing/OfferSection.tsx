@@ -21,9 +21,9 @@ const OfferSection = () => {
           className="max-w-lg mx-auto card-elevated border-2 border-primary/30 p-8 md:p-10"
         >
           <p className="text-muted-foreground line-through text-xl mb-1">De R$ 297,00</p>
-          <p className="font-display text-5xl md:text-6xl font-black text-primary mb-2">R$ 97</p>
+          <p className="font-display text-5xl md:text-6xl font-black text-primary mb-2">R$ 47,90</p>
           <p className="text-muted-foreground text-lg mb-8">
-            ou <strong className="text-foreground">12x de R$ 9,70</strong>
+            ou <strong className="text-foreground">4x de R$ 11,98</strong>
           </p>
 
           <button className="btn-cta w-full text-xl animate-pulse-glow rounded-2xl mb-6">
