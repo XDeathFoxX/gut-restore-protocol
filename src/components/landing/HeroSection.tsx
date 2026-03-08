@@ -1,0 +1,67 @@
+import { motion } from "framer-motion";
+import { Play } from "lucide-react";
+import heroThumbnail from "@/assets/hero-thumbnail.jpg";
+
+const HeroSection = () => {
+  return (
+    <section className="gradient-hero section-padding pt-12 md:pt-20">
+      <div className="section-container text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="font-display text-3xl md:text-5xl lg:text-6xl font-black leading-tight text-foreground max-w-4xl mx-auto mb-6"
+        >
+          Livre-se da barriga estufada, má digestão e prisão de ventre com um{" "}
+          <span className="text-primary">protocolo natural</span> que está transformando a saúde intestinal de milhares de pessoas
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-body"
+        >
+          Assista ao vídeo abaixo e descubra o método simples para restaurar seu intestino sem remédios caros ou dietas extremas.
+        </motion.p>
+
+        {/* VSL Player */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+          className="relative max-w-4xl mx-auto mb-8 rounded-2xl overflow-hidden group cursor-pointer"
+          style={{ boxShadow: "0 20px 60px -12px hsla(150, 25%, 15%, 0.2)" }}
+        >
+          <img
+            src={heroThumbnail}
+            alt="Mulher com desconforto digestivo"
+            className="w-full aspect-video object-cover"
+          />
+          <div className="absolute inset-0 bg-foreground/30 flex items-center justify-center transition-all group-hover:bg-foreground/40">
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary flex items-center justify-center animate-pulse-glow transition-transform group-hover:scale-110">
+              <Play className="w-8 h-8 md:w-10 md:h-10 text-primary-foreground ml-1" />
+            </div>
+          </div>
+          <div className="absolute top-4 right-4 bg-destructive text-destructive-foreground text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+            Assista antes que saia do ar
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="flex flex-col items-center gap-3"
+        >
+          <button className="btn-cta text-xl animate-pulse-glow rounded-2xl">
+            QUERO ACESSAR O MÉTODO AGORA
+          </button>
+          <p className="text-sm text-muted-foreground">Assista até o final para entender.</p>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
