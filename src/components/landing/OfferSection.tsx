@@ -26,9 +26,9 @@ const OfferSection = () => {
             ou <strong className="text-foreground">4x de R$ 11,98</strong>
           </p>
 
-          <button className="btn-cta w-full text-xl animate-pulse-glow rounded-2xl mb-6">
+          <a href="https://pay.kirvano.com/368b993d-b387-4dc7-af77-a20558053be9" target="_blank" rel="noopener noreferrer" className="btn-cta w-full text-xl animate-pulse-glow rounded-2xl mb-6 inline-block text-center">
             QUERO COMEÇAR AGORA
-          </button>
+          </a>
 
           <div className="flex items-center justify-center gap-4 text-muted-foreground">
             <CreditCard className="w-6 h-6" />
