@@ -30,22 +30,19 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="relative max-w-4xl mx-auto mb-8 rounded-2xl overflow-hidden group cursor-pointer"
+          className="relative max-w-4xl mx-auto mb-8 rounded-2xl overflow-hidden"
           style={{ boxShadow: "0 20px 60px -12px hsla(150, 25%, 15%, 0.2)" }}
         >
-          <img
-            src={heroThumbnail}
-            alt="Mulher com desconforto digestivo"
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            poster={heroThumbnail}
             className="w-full aspect-video object-cover"
-          />
-          <div className="absolute inset-0 bg-foreground/30 flex items-center justify-center transition-all group-hover:bg-foreground/40">
-            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary flex items-center justify-center animate-pulse-glow transition-transform group-hover:scale-110">
-              <Play className="w-8 h-8 md:w-10 md:h-10 text-primary-foreground ml-1" />
-            </div>
-          </div>
-          <div className="absolute top-4 right-4 bg-destructive text-destructive-foreground text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
-            Assista antes que saia do ar
-          </div>
+          >
+            <source src="/videos/vsl_digestao169.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos.
+          </video>
         </motion.div>
 
         <motion.div
